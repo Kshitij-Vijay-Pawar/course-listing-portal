@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.set("view engine", "ejs");
-app.set("views", "./views");
+app.set("views", "./src/views");
 
 const courses = [
   { id: 1, name: "MERN Stack", duration: "6 Months", fees: 25000 },
