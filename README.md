@@ -30,8 +30,6 @@ import { useEffect } from "react";
 useEffect(() => {
   
 });
-
-
 ```
 ---
 
@@ -40,7 +38,6 @@ useEffect(() => {
 useEffect(() => {
   
 }, [count]);
-
 ```
 ---
 
@@ -49,7 +46,6 @@ useEffect(() => {
 useEffect(() => {
   
 }, []);
-
 ```
 ---
 
@@ -71,7 +67,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
     <Route path="/about" element={<About />} />
   </Routes>
 </BrowserRouter>
-
 ```
 ---
 
@@ -80,7 +75,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 <Link to="/about">About</Link>
-
 ```
 ---
 
@@ -89,14 +83,10 @@ import { Link } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 <Link to="/about">About</Link>
-
 ```
 ---
 
 ### 🔟 Write syntax for conditional rendering using ternary operator in JSX.
 ```js
-import { useParams } from "react-router-dom";
-
-const { id } = useParams();
-
+{isLoggedIn ? <h1>Welcome</h1> : <h1>Please Login</h1>}
 ```
